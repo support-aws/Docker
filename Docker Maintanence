@@ -1,0 +1,9 @@
+#Remove Docker containers 
+
+docker ps -a 
+docker rm -f 8d4aee948143             #to remove only one container
+docker rm -f 8d4aee948143 0377291e4242 002c55670cb8       #to remove selective containers
+
+or 
+
+docker rm -f $(docker ps -aq)         #to remove all docker containers
