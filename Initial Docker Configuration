@@ -1,0 +1,21 @@
+Install Docker:
+sudo apt install docker.io -y
+sudo usermod -aG docker $USER #refresh your terminal (Logoff and log back)
+sudo systemctl restart docker
+sudo systemctl status docker 
+or
+sudo systemctl status docker.service
+sudo systemctl daemon-reload
+
+Check Docker Version:
+sudo docker --version
+
+Check Process:
+sudo docker ps 
+sudo docker ps -a          #to check all process
+
+To check Docker is running:
+sudo docker run hello-world
+
+docker inspect <containerID>      #to check docker is running 
+docker network create <name>
